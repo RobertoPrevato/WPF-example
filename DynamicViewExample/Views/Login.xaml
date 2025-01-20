@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="DynamicViewExample.Views.Login"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:DynamicViewExample.Views"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel Grid.Column="0" Margin="20" VerticalAlignment="Top">
+        <TextBlock Text="Login" FontSize="20" FontWeight="Bold" Foreground="#2D572C" Margin="0,0,0,20" />
+        <TextBlock Text="Username" Margin="0,0,0,5" />
+        <TextBox x:Name="UsernameTextBox" Height="30" Margin="0,0,0,15" />
+        <TextBlock Text="Password" Margin="0,0,0,5" />
+        <PasswordBox x:Name="PasswordBox" Height="30" Margin="0,0,0,15" />
+        <Button Content="Login" Height="35" Background="#2D572C" Foreground="White" Click="LoginButton_Click" Cursor="Hand" />
+
+        <Button Content="Don't you have an operator account? Create one."
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                Margin="10"
+                Click="GoToSignUp_Click"
+                Background="Transparent"
+                FontStyle="Italic"
+                FontSize="12px"
+                BorderThickness="0"
+                Cursor="Hand"
+                />
+    </StackPanel>
+</UserControl>
